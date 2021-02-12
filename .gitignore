@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+/lib/**/*.js
+/lib/**/*.d.ts
+lcov.info
+coverage-final.json
+dist/
