@@ -33,7 +33,6 @@ module.exports = (options) => {
      * Source map for Karma from the help of karma-sourcemap-loader &  karma-webpack
      */
     devtool: 'inline-source-map',
-
     /**
      * Options affecting the resolving of modules.
      * See: http://webpack.github.io/docs/configuration.html#resolve

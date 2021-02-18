@@ -8,7 +8,7 @@ module.exports = (config) => {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine', 'webpack'],
 
     // list of files / patterns to load in the browser
     files: ['tests/**/*.+(ts|tsx)'],
@@ -20,7 +20,7 @@ module.exports = (config) => {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       // add webpack as preprocessor
-      'dist/**/**.+(js)': ['sourcemap', 'coverage'],
+      'lib/**/**.+(ts|tsx)': ['sourcemap', 'coverage'],
       'tests/**/*.+(ts|tsx)': ['webpack', 'sourcemap'],
     },
 
@@ -57,7 +57,7 @@ module.exports = (config) => {
 
     // level of logging. Possible values:
     // config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
 
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: true,
